@@ -6,8 +6,8 @@
 #Region "Example"
 ' Shows how to obtain object describing the data type of complex data node with OPC UA Complex Data plug-in.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -21,7 +21,7 @@ Imports OpcLabs.EasyOpc.UA.AddressSpace.Standard
 Imports OpcLabs.EasyOpc.UA.InformationModel
 Imports OpcLabs.EasyOpc.UA.Plugins.ComplexData
 
-Namespace ComplexData._IEasyUAClientComplexData
+Namespace Global.UADocExamples.ComplexData._IEasyUAClientComplexData
 
     Friend Class ResolveDataType
 

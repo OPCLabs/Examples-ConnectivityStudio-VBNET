@@ -1,11 +1,10 @@
 ﻿' $Header: $
 ' Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
-' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Engine
 
-Namespace FileProviders
+Namespace Global.UADocExamples.FileProviders
     Public Class FileProvidersExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _
@@ -48,4 +47,3 @@ Namespace FileProviders
         End Sub
     End Class
 End Namespace
-' ReSharper restore CheckNamespace

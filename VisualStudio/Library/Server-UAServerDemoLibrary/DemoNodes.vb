@@ -7,8 +7,8 @@
 ' ReSharper disable StringLiteralTypo
 #Region "Example"
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -17,8 +17,8 @@ Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Generic
 Imports OpcLabs.EasyOpc.UA.NodeSpace
 
-'Namespace UAServerDemoLibrary
-Public Module DemoNodes
+Namespace Global.UAServerDemoLibrary
+    Public Module DemoNodes
         ''' <summary>
         ''' Adds nodes that demonstrate various features of the OPC Wizard.
         ''' </summary>
@@ -64,7 +64,7 @@ Public Module DemoNodes
 
 
             ' A data variable of data type BaseDataType that, in fact, only accepts float values to be written into it.
-            ' This is a demonstration of what how the data variable should *not* behave, because the client has no way of
+            ' This is a demonstration of how the data variable should *not* behave, because the client has no way of
             ' determining the data type that the server expects.
             Dim variantRestrictedDataVariable = New UADataVariable("VariantRestricted")
             demoFolder.Add(variantRestrictedDataVariable _
@@ -81,6 +81,6 @@ Public Module DemoNodes
 
         Private ReadOnly Random As Random = New Random()
     End Module
-'End Namespace
+End Namespace
 #End Region
 

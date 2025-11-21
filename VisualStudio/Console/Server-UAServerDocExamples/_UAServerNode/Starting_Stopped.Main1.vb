@@ -11,17 +11,17 @@
 ' model.
 ' You can use any OPC UA client, including our Connectivity Explorer and OpcCmd utility, to connect to the server. 
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
 Imports System
-Imports System.Timers
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.NodeSpace
+Imports Timer = System.Timers.Timer
 
-Namespace _UAServerNode
+Namespace Global.UAServerDocExamples._UAServerNode
     Partial Friend Class Starting_Stopped
         Shared Sub Main1()
             ' Instantiate the server object.
@@ -48,10 +48,11 @@ Namespace _UAServerNode
                                                   AddHandler timer.Elapsed, Sub(s, a)
                                                                                 dataVariable.ReadAttributeData = New UAAttributeData(random.Next(), DateTime.UtcNow)
                                                                             End Sub
-                                                  timer.Start()
 
                                                   ' Associate the timer with the data variable.
                                                   dataVariable.State = timer
+
+                                                  timer.Start()
                                               End Sub
 
             AddHandler dataVariable.Stopped, Sub(sender, args)

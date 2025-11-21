@@ -3,7 +3,7 @@
 ' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 
-Namespace DataAccess.Xml
+Namespace Global.DocExamples.DataAccess.Xml
 
     Public Class XmlExamplesMenu
         Shared Sub Main1()

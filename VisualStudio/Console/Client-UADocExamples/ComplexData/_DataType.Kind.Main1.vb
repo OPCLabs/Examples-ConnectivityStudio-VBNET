@@ -7,19 +7,17 @@
 #Region "Example"
 ' Shows how to process a data type, displaying some of its properties, recursively.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
-Imports System
-Imports System.Linq
 Imports OpcLabs.BaseLib.DataTypeModel
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.ComplexData
 Imports OpcLabs.EasyOpc.UA.OperationModel
 
-Namespace ComplexData._DataType
+Namespace Global.UADocExamples.ComplexData._DataType
 
     Friend Class Kind
 
@@ -32,7 +30,7 @@ Namespace ComplexData._DataType
             ' or "https://opcua.demo-this.com:51212/UA/SampleServer/"
 
             ' Define which node we will work with.
-            Dim nodeDescriptor As UANodeDescriptor = _
+            Dim nodeDescriptor As UANodeDescriptor =
                 "nsu=http://test.org/UA/Data/ ;i=10239"  ' [ObjectsFolder]/Data.Static.Scalar.StructureValue
 
             ' Instantiate the client object.
@@ -70,7 +68,7 @@ Namespace ComplexData._DataType
                     Console.WriteLine("The data type is an enumeration.")
                     Dim enumerationDataType = CType(dataType, EnumerationDataType)
                     Console.WriteLine("It has {0} enumeration members.", enumerationDataType.EnumerationMembers.Count)
-                    Console.WriteLine("The names of the enumeration members are: {0}.", _
+                    Console.WriteLine("The names of the enumeration members are: {0}.",
                                       String.Join(", ", enumerationDataType.EnumerationMembers.Select(Function(member) member.Name)))
                     ' Here you can process the members, or inspect SizeInBits etc.
 
@@ -98,7 +96,7 @@ Namespace ComplexData._DataType
                     Console.WriteLine("The data type is structured.")
                     Dim structuredDataType = CType(dataType, StructuredDataType)
                     Console.WriteLine("It has {0} data fields.", structuredDataType.DataFields.Count)
-                    Console.WriteLine("The names of the data fields are: {0}.", _
+                    Console.WriteLine("The names of the data fields are: {0}.",
                                       String.Join(", ", structuredDataType.DataFields.Select(Function(field) field.Name)))
                     Console.WriteLine("A dump of each of the data fields follows.")
 

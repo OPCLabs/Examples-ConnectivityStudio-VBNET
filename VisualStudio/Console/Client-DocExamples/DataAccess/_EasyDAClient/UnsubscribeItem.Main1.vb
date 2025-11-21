@@ -6,8 +6,8 @@
 #Region "Example"
 ' This example shows how subscribe to changes of multiple items, and unsubscribe from one of them.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -15,7 +15,7 @@ Imports System.Threading
 Imports OpcLabs.EasyOpc.DataAccess
 Imports OpcLabs.EasyOpc.DataAccess.OperationModel
 
-Namespace DataAccess._EasyDAClient
+Namespace Global.DocExamples.DataAccess._EasyDAClient
     Partial Friend Class UnsubscribeItem
         Shared Sub Main1()
             Using client = New EasyDAClient()

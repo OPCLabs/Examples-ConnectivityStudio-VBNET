@@ -5,7 +5,7 @@ Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Engine
 
-Namespace Interaction
+Namespace Global.UADocExamples.Interaction
     Public Class InteractionExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _

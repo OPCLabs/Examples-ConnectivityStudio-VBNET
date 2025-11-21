@@ -3,7 +3,7 @@
 ' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 
-Namespace Specialized
+Namespace Global.UADocExamples.Specialized
     Public Class SpecializedExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _

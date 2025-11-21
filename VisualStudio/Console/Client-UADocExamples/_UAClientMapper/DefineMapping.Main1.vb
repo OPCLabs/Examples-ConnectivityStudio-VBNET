@@ -6,17 +6,16 @@
 #Region "Example"
 ' This example for OPC UA type-less mapping shows how to define a mapping and perform a read operation.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
-Imports System.Linq
 Imports OpcLabs.BaseLib.ComponentModel.Linking
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.LiveMapping
 
-Namespace _UAClientMapper
+Namespace Global.UADocExamples._UAClientMapper
     Friend Class DefineMapping
         Class MyClass2
             Public Property Value As Object
@@ -39,14 +38,14 @@ Namespace _UAClientMapper
             Dim memberInfo = target.GetType().GetMember("Value").SingleOrDefault()
             Debug.Assert(memberInfo IsNot Nothing)
 
-            mapper.DefineMapping( _
-                New UAClientDataMappingSource( _
-                    endpointDescriptor, _
-                    "nsu=http://test.org/UA/Data/ ;i=10389", _
-                    UAAttributeId.Value, _
-                    UAIndexRangeList.Empty, _
-                    UAReadParameters.CacheMaximumAge), _
-                New UAClientDataMapping(GetType(Int32)), _
+            mapper.DefineMapping(
+                New UAClientDataMappingSource(
+                    endpointDescriptor,
+                    "nsu=http://test.org/UA/Data/ ;i=10389",
+                    UAAttributeId.Value,
+                    UAIndexRangeList.Empty,
+                    UAReadParameters.CacheMaximumAge),
+                New UAClientDataMapping(GetType(Int32)),
                 New ObjectMemberLinkingTarget(target.GetType(), target, memberInfo))
 
             ' Perform a read operation.

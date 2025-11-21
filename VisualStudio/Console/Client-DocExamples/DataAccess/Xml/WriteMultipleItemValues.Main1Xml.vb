@@ -4,8 +4,8 @@
 #Region "Example"
 ' Shows how to write into multiple OPC XML-DA items using a single method call, and read multiple item values back.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -13,7 +13,7 @@ Imports OpcLabs.BaseLib.OperationModel
 Imports OpcLabs.EasyOpc.DataAccess
 Imports OpcLabs.EasyOpc.DataAccess.OperationModel
 
-Namespace DataAccess.Xml
+Namespace Global.DocExamples.DataAccess.Xml
     Partial Friend Class WriteMultipleItemValues
         Public Shared Sub Main1Xml()
             ' Instantiate the client object.

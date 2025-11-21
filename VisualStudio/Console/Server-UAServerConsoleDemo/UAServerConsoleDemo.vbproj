@@ -11,11 +11,10 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<RootNamespace>UAServerConsoleDemo</RootNamespace>
 		<TargetFrameworks>net472;net8.0</TargetFrameworks>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.OpcWizard" Version="5.82.175"/>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.83.473"/>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Library\Server-UAServerDemoLibrary\UAServerDemoLibrary.vbproj"/>

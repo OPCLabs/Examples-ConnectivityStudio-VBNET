@@ -5,7 +5,7 @@ Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA.PubSub
 Imports OpcLabs.EasyOpc.UA.PubSub.Engine
 
-Namespace PubSub
+Namespace Global.UASubscriberDocExamples.PubSub
     Public Class PubSubExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _

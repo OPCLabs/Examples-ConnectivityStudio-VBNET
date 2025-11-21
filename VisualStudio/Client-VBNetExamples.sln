@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{D5E0C9C4-3DC1-43CB-B0A5-2E72FA6D77CF}"
-	ProjectSection(SolutionItems) = preProject
-		Console\Client-DocExamples\CommonExamplesMenu.vb = Console\Client-DocExamples\CommonExamplesMenu.vb
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E6671B54-3DB1-4C9A-9AEE-E2B1534709EC}"
 EndProject

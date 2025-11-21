@@ -13,38 +13,39 @@
 ' Install the service by running:
 '      C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe /i UAServerWindowsServiceDemo.exe
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
 Imports System.ServiceProcess
-Imports Microsoft.SqlServer
 Imports OpcLabs.EasyOpc.UA
 Imports UAServerDemoLibrary
 
-Partial Public Class UAService1
-    Inherits ServiceBase
+Namespace Global.UAServerWindowsServiceDemo
+    Partial Public Class UAService1
+        Inherits ServiceBase
 
-    Public Sub New()
-        InitializeComponent()
+        Public Sub New()
+            InitializeComponent()
 
-        ' Define various nodes.
-        ConsoleNodes.AddToParent(_server.Objects)
-        DataNodes.AddToParent(_server.Objects)
-        DemoNodes.AddToParent(_server.Objects)
-    End Sub
+            ' Define various nodes.
+            ConsoleNodes.AddToParent(_server.Objects)
+            DataNodes.AddToParent(_server.Objects)
+            DemoNodes.AddToParent(_server.Objects)
+        End Sub
 
-    Protected Overrides Sub OnStart(ByVal args() As String)
-        ' Start the server.
-        _server.Start()
-    End Sub
+        Protected Overrides Sub OnStart(ByVal args() As String)
+            ' Start the server.
+            _server.Start()
+        End Sub
 
-    Protected Overrides Sub OnStop()
-        ' Stop the server.
-        _server.Stop()
-    End Sub
+        Protected Overrides Sub OnStop()
+            ' Stop the server.
+            _server.Stop()
+        End Sub
 
-    Private ReadOnly _server As EasyUAServer = New EasyUAServer()
-End Class
+        Private ReadOnly _server As EasyUAServer = New EasyUAServer()
+    End Class
+End Namespace
 #End Region

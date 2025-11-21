@@ -7,15 +7,15 @@
 #Region "Example"
 ' This example shows how to read a range of values from an array.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.OperationModel
 
-Namespace _UAIndexRangeList
+Namespace Global.UACommonDocExamples._UAIndexRangeList
     Friend Class Usage
         Public Shared Sub ReadValue()
 
@@ -30,10 +30,10 @@ Namespace _UAIndexRangeList
             ' Obtain the value, indicating that just the elements 2 to 4 should be returned
             Dim value As Object
             Try
-                value = client.ReadValue( _
-                    New UAReadArguments( _
-                        endpointDescriptor, _
-                        "nsu=http://test.org/UA/Data/ ;i=10305", _
+                value = client.ReadValue(
+                    New UAReadArguments(
+                        endpointDescriptor,
+                        "nsu=http://test.org/UA/Data/ ;i=10305",
                         UAIndexRangeList.OneDimension(2, 4)))
                 ' or "opc.tcp://opcua.demo-this.com:51210/UA/SampleServer"
             Catch uaException As UAException

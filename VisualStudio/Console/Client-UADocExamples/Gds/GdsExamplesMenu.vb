@@ -1,11 +1,10 @@
 ﻿' $Header: $
 ' Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
-' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Engine
 
-Namespace Gds
+Namespace Global.UADocExamples.Gds
     Public Class GdsExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _
@@ -44,4 +43,3 @@ Namespace Gds
         End Sub
     End Class
 End Namespace
-' ReSharper restore CheckNamespace

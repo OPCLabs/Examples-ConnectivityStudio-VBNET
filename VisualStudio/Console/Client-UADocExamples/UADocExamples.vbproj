@@ -22,6 +22,6 @@
 		<EmbeddedResource Include="Licensing\Key-DemoOrTrial-WebForm-1999003494-20180611.bin"/>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.82.175"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.83.473"/>
 	</ItemGroup>
 </Project>

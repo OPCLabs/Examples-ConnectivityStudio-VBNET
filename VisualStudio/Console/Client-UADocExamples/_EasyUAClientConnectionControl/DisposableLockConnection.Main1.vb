@@ -7,8 +7,8 @@
 ' This example shows how to obtain lock the OPC UA connection and obtain a disposable object which unlocks the connection
 ' when it is disposed.
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -18,7 +18,7 @@ Imports OpcLabs.EasyOpc.UA.OperationModel
 Imports OpcLabs.EasyOpc.UA.Services
 Imports OpcLabs.EasyOpc.UA.Services.Extensions
 
-Namespace _EasyUAClientConnectionControl
+Namespace Global.UADocExamples._EasyUAClientConnectionControl
     Partial Friend Class DisposableLockConnection
         Public Shared Sub Main1()
             Dim endpointDescriptor As UAEndpointDescriptor =

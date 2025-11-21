@@ -5,7 +5,7 @@ Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Engine
 
-Namespace Licensing
+Namespace Global.UADocExamples.Licensing
     Public Class LicensingExamplesMenu
         Shared Sub Main1()
             Dim actionArray = New Action() _

@@ -3,7 +3,7 @@
 ' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 
-Namespace AlarmsAndEvents
+Namespace Global.DocExamples.AlarmsAndEvents
 
     Public Class AEExamplesMenu
         Shared Sub Main1()

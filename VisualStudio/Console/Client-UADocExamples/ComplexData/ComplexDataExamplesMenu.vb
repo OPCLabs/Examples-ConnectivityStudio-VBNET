@@ -1,12 +1,11 @@
 ﻿' $Header: $
 ' Copyright (c) CODE Consulting and Development, s.r.o., Plzen. All rights reserved.
 
-' ReSharper disable CheckNamespace
 Imports OpcLabs.BaseLib.Console
 Imports OpcLabs.EasyOpc.UA
 Imports OpcLabs.EasyOpc.UA.Engine
 
-Namespace ComplexData
+Namespace Global.UADocExamples.ComplexData
 
     Friend Class ComplexDataExamplesMenu
         Shared Sub Main1()

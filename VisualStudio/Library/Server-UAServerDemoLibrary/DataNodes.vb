@@ -7,8 +7,8 @@
 ' ReSharper disable StringLiteralTypo
 #Region "Example"
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
-' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-VBNET .
+' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
 ' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
@@ -19,8 +19,8 @@ Imports OpcLabs.EasyOpc.AlarmsAndEvents.Engine
 Imports OpcLabs.EasyOpc.UA.AddressSpace.Standard
 Imports OpcLabs.EasyOpc.UA.NodeSpace
 
-'Namespace UAServerDemoLibrary
-Public Module DataNodes
+Namespace Global.UAServerDemoLibrary
+    Public Module DataNodes
         ''' <summary>
         ''' Adds static and dynamic nodes that demonstrate various data types and access levels.
         ''' </summary>
@@ -46,9 +46,9 @@ Public Module DataNodes
             Dim guidReadOnlyDataVariable As UADataVariable = New UADataVariable("GuidValue").Writable(False).ValueType(Of Guid)()
             Dim int16ReadOnlyDataVariable As UADataVariable =
                 New UADataVariable("Int16Value").Writable(False).ValueType(Of Short)()
-        Dim int32ReadOnlyDataVariable As UADataVariable =
+            Dim int32ReadOnlyDataVariable As UADataVariable =
                 New UADataVariable("Int32Value").Writable(False).ValueType(Of Integer)()
-        Dim int64ReadOnlyDataVariable As UADataVariable =
+            Dim int64ReadOnlyDataVariable As UADataVariable =
                 New UADataVariable("Int64Value").Writable(False).ValueType(Of Long)()
             Dim sByteReadOnlyDataVariable As UADataVariable =
                 New UADataVariable("SByteValue").Writable(False).ValueType(Of SByte)()
@@ -608,6 +608,6 @@ Public Module DataNodes
             End Select
         End Function
     End Module
-'End Namespace
+End Namespace
 #End Region
 

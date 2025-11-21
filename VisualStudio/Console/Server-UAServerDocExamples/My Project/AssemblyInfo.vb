@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("CODE Consulting and Development, s.r.o.")>
 <Assembly: AssemblyProduct("OPCWizard-UA")>
-<Assembly: AssemblyCopyright("© 2024 CODE Consulting and Development, s.r.o., Plzen. All rights reserved.")>
+<Assembly: AssemblyCopyright("© 2024-2025 CODE Consulting and Development, s.r.o., Plzen. All rights reserved.")>
 <Assembly: AssemblyTrademark("OPC Labs")>
 <Assembly: AssemblyCulture("")>
 

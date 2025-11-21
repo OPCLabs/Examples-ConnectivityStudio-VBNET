@@ -6,7 +6,7 @@
 		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 		<ProjectGuid>{3E2FAFDC-CD62-4540-A9E9-7CA980F6522E}</ProjectGuid>
 		<OutputType>WinExe</OutputType>
-		<StartupObject>UAServerWindowsServiceDemo.Program</StartupObject>
+		<StartupObject>Sub Main</StartupObject>
 		<RootNamespace>UAServerWindowsServiceDemo</RootNamespace>
 		<AssemblyName>UAServerWindowsServiceDemo</AssemblyName>
 		<FileAlignment>512</FileAlignment>
@@ -19,6 +19,21 @@
 		<SccAuxPath>SAK</SccAuxPath>
 		<SccProvider>SAK</SccProvider>
 		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+		<PublishUrl>publish\</PublishUrl>
+		<Install>true</Install>
+		<InstallFrom>Disk</InstallFrom>
+		<UpdateEnabled>false</UpdateEnabled>
+		<UpdateMode>Foreground</UpdateMode>
+		<UpdateInterval>7</UpdateInterval>
+		<UpdateIntervalUnits>Days</UpdateIntervalUnits>
+		<UpdatePeriodically>false</UpdatePeriodically>
+		<UpdateRequired>false</UpdateRequired>
+		<MapFileExtensions>true</MapFileExtensions>
+		<ApplicationRevision>0</ApplicationRevision>
+		<ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		<IsWebBootstrapper>false</IsWebBootstrapper>
+		<UseApplicationTrust>false</UseApplicationTrust>
+		<BootstrapperEnabled>true</BootstrapperEnabled>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<PlatformTarget>AnyCPU</PlatformTarget>
@@ -90,7 +105,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="OpcLabs.OpcWizard">
-			<Version>5.82.175</Version>
+			<Version>5.83.473</Version>
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
@@ -98,6 +113,18 @@
 			<Project>{690e1c21-9517-47b0-a8e9-f7b27c3ff07d}</Project>
 			<Name>UAServerDemoLibrary</Name>
 		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+			<Visible>False</Visible>
+			<ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.5 SP1</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets"/>
 </Project>

@@ -48,6 +48,9 @@
 		<NoWarn>42353,42354,42355</NoWarn>
 		<Prefer32Bit>false</Prefer32Bit>
 	</PropertyGroup>
+	<PropertyGroup>
+		<StartupObject>Sub Main</StartupObject>
+	</PropertyGroup>
 	<ItemGroup>
 		<Reference Include="System"/>
 		<Reference Include="System.Configuration.Install"/>
@@ -85,7 +88,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="OpcLabs.QuickOpc" Version="5.71.0-rev0019">
-			<Version>5.82.175</Version>
+			<Version>5.83.473</Version>
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
