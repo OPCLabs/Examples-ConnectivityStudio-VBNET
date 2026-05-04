@@ -14,7 +14,7 @@
 		<TargetFrameworks>net472;net8.0</TargetFrameworks>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.OpcWizard" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.84.187"/>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Library\Server-UAServerDemoLibrary\UAServerDemoLibrary.vbproj"/>

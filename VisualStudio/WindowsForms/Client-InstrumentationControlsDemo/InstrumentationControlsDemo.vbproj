@@ -118,11 +118,11 @@
 		</Compile>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.71.0-rev0019">
-			<Version>5.83.473</Version>
+		<PackageReference Include="OpcLabs.QuickOpc">
+			<Version>5.84.187</Version>
 		</PackageReference>
-		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.71.0-rev0019">
-			<Version>5.83.473</Version>
+		<PackageReference Include="OpcLabs.QuickOpc.Forms">
+			<Version>5.84.187</Version>
 		</PackageReference>
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets"/>

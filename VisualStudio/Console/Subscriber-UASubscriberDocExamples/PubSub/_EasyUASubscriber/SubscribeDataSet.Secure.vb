@@ -9,9 +9,9 @@
 ' The network messages for this example can be published e.g. using the UADemoPublisher tool - see
 ' https://kb.opclabs.com/How_to_publish_or_subscribe_to_secure_OPC_UA_PubSub_messages .
 '
-' Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
+' Find all latest examples here: https://www.doc-that.com/files/onlinedocs/OPCLabs-ConnectivityStudio/Latest/examples.html .
 ' OPC client and subscriber examples in VB.NET on GitHub: https://github.com/OPCLabs/Examples-ConnectivityStudio-VBNET .
-' Missing some example? Ask us for it on our Online Forums, https://www.opclabs.com/forum/index ! You do not have to own
+' Missing some example? Ask us for it on our Online Forums, https://forum.opclabs.com/forum/index ! You do not have to own
 ' a commercial license in order to use Online Forums, and we reply to every post.
 
 Imports OpcLabs.EasyOpc.UA.Engine
@@ -38,8 +38,8 @@ Namespace Global.UASubscriberDocExamples.PubSub._EasyUASubscriber
             ' Specifies the security mode that will be used to connect to the SKS.
             subscribeDataSetArguments.DataSetSubscriptionDescriptor.CommunicationParameters.SecurityKeyServiceTemplate.EndpointSelectionPolicy = UAMessageSecurityModes.SecuritySignAndEncrypt
             ' Specifies the user name and password used for "logging in" to the SKS.
-            subscribeDataSetArguments.DataSetSubscriptionDescriptor.CommunicationParameters.SecurityKeyServiceTemplate.UserIdentity.UserNameTokenInfo.UserName = "root"
-            subscribeDataSetArguments.DataSetSubscriptionDescriptor.CommunicationParameters.SecurityKeyServiceTemplate.UserIdentity.UserNameTokenInfo.Password = "secret"
+            subscribeDataSetArguments.DataSetSubscriptionDescriptor.CommunicationParameters.SecurityKeyServiceTemplate.UserIdentityInfo.UserNameTokenInfo.UserName = "root"
+            subscribeDataSetArguments.DataSetSubscriptionDescriptor.CommunicationParameters.SecurityKeyServiceTemplate.UserIdentityInfo.UserNameTokenInfo.Password = "secret"
             ' Specifies the Id of the security group in the SKS that will be used (the security group in the
             ' SKS is configured to use certain security policy, and has other parameters detailing how the
             ' security keys are generated).

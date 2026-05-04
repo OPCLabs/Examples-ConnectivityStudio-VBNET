@@ -22,7 +22,7 @@
 		<EmbeddedResource Include="Licensing\Key-DemoOrTrial-WebForm-1995003302-20240717.txt"/>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.OpcWizard" Version="5.83.473"/>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.84.187"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.84.187"/>
 	</ItemGroup>
 </Project>

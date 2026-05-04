@@ -16,6 +16,6 @@
 		<RootNamespace>UAConsoleLiveMapping</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.84.187"/>
 	</ItemGroup>
 </Project>

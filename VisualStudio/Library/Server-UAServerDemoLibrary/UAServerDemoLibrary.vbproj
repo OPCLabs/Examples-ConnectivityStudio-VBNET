@@ -12,6 +12,6 @@
 		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.OpcWizard" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.84.187"/>
 	</ItemGroup>
 </Project>

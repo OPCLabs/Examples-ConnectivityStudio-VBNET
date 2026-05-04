@@ -13,8 +13,8 @@
 		<OutputType>Exe</OutputType>
 		<TargetFrameworks>net472;net8.0</TargetFrameworks>
 		<Company>CODE Consulting and Development, s.r.o.</Company>
-		<AssemblyVersion>5.83.473.1</AssemblyVersion>
-		<FileVersion>5.83.473.1</FileVersion>
+		<AssemblyVersion>5.84.187.1</AssemblyVersion>
+		<FileVersion>5.84.187.1</FileVersion>
 		<Product>EasySparkplug</Product>
 		<AssemblyName>SparkplugDocExamples</AssemblyName>
 		<RootNamespace>SparkplugDocExamples</RootNamespace>
@@ -27,6 +27,6 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.EasySparkplug" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.EasySparkplug" Version="5.84.187"/>
 	</ItemGroup>
 </Project>

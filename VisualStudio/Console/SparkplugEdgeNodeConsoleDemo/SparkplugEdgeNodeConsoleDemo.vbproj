@@ -11,7 +11,7 @@
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.EasySparkplug" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.EasySparkplug" Version="5.84.187"/>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Library\SparkplugEdgeNodeDemoLibrary\SparkplugEdgeNodeDemoLibrary.vbproj"/>

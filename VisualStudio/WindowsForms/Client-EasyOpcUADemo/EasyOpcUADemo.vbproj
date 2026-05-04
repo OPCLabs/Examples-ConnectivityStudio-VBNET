@@ -33,8 +33,8 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.83.473"/>
-		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.83.473"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.84.187"/>
+		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.84.187"/>
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Update="MainForm.vb">
